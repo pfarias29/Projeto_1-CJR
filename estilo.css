@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+
+:root {
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    --header-bg-image: url(backgorund_image.jpg);
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: var(--dark-layer), var(--header-bg-image);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display:flex;
+    justify-content:space-between;
+    color:var(--nav-links-color);
+    padding: 5%;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.subtitulo {
+    display:flex;
+    flex-direction: column;
+}
+
+.topRight a{
+    margin-right:2vh;
+}
+
+a:hover {
+    color:#878584;
+    cursor: pointer;
+}
+
+nav {
+    background-color:#343a40;
+    color:#fff;
+    height: 4vh;
+    padding-top: 1vh;
+    padding-left: 5vh;
+}
+
+nav a{
+    padding-right: 3vh;
+}
+
+nav a:hover {
+    color: #f79800;
+}
+footer {
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1vh;
+    background-color:#e3e3e3;
+}
+
+.tabela {
+    display:grid;
+    padding-top:2vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #e9ecef;
+}
+
+th {
+    text-align: left;
+    width:5px;
+    height: 5vh;
+    padding-left: 2vh;
+}
+
+td {
+    padding-right: 8vh;
+    width:5vh;
+    height:4vh;
+    padding-left: 2vh;
+    white-space: nowrap;
+}
+
+td a {
+    padding:1vh;
+    padding-left:3vh;
+}
+
+.editar {
+    color: #ffa207;
+}
+
+.excluir {
+    color:#dc3545
+}
+
+td label {
+    border-color: black;
+    border-width: 1px;
+    background-color: #878584;
+}
+
+td button {
+    background-color: transparent;
+    border-width: 1%;
+    width:50%;
+    margin-left: 20%;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.pagination button {
+    width:4vh;
+    height: 4vh;
+    font-weight: 600;
+    border:1 px black;
+}
+
+.pagination {
+    position: fixed;
+    left:45%;
+    bottom:10vh;
+}
+
+.active {
+    background-color: #007bff;
+}
